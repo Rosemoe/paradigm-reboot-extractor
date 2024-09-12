@@ -8,7 +8,7 @@ Extract metadata and resources from Paradigm: Reboot game APK, including:
 - Skin resources (Sprite and Texture2D only)
 ## Usage
 This tool is tested on Windows and Python 3.10.   
-Install required packages via command: `pip install UnityPy,fsb5`
+Install required packages via command: `pip install UnityPy,fsb5,numpy,pycryptodome`
 ### Command-line Usage
 ```
 Usage: extractor.py -i <apk_path> [-a <assets_apk_path>] [-h] [--songs] [--skins]
