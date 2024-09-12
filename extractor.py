@@ -216,7 +216,7 @@ def extract_songs(apk: zipfile.ZipFile, table):
     for k, entry in env.files.items():
         print('Exporting song resources:', k.removeprefix('s/'))
         obj = next(entry.get_filtered_objects([ClassIDType.TextAsset, ClassIDType.Sprite, ClassIDType.AudioClip])).read()
-        k = k.replace('s/', 'songs/')
+        k = 'songs/' + k.removeprefix('s/')
         addr = k[:k.rfind('/')]
         if not os.path.exists('./{}'.format(addr)):
             os.makedirs('./{}'.format(addr))
