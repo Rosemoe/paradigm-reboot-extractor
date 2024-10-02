@@ -162,6 +162,10 @@ def extract_song_meta(apk_path: str):
             meta_data = data.raw_data.tobytes()[4:]
             rd = ByteReader(meta_data)
             result = rd.read_schema(SongMetaItemSchema, True)
+            addr_set = set(x['address'] for x in result)
+            if len(addr_set) < len(result):
+                # Discard this one
+                continue
             with open('song-meta.json', 'w', encoding='utf-8') as f:
                 f.write(json.dumps(result, indent=2, ensure_ascii=False))
             print('Exported song metadata')
