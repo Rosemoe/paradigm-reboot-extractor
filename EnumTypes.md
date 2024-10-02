@@ -1,5 +1,5 @@
 # Enum Types
-Enum type values from Paradigm: Reboot v2.9
+Enum type values from Paradigm: Reboot v2.11
 ## `ParadigmHelper.EDifficulty`
 ```CSharp
 public const ParadigmHelper.EDifficulty Detected = 0;
@@ -86,6 +86,9 @@ public const OnlineStoreProductData.ProductEnum Single27_Intebreeze = 56;
 public const OnlineStoreProductData.ProductEnum SideStoryAlbum17_Lanota_1 = 57;
 public const OnlineStoreProductData.ProductEnum SideStoryAlbum18_Lanota_2 = 58;
 public const OnlineStoreProductData.ProductEnum SideStoryAlbum19_RemnantSouls = 59;
+public const OnlineStoreProductData.ProductEnum SideStoryAlbum20_RaindropJourney_1 = 60;
+public const OnlineStoreProductData.ProductEnum SideStoryAlbum21_RaindropJourney_2 = 61;
+public const OnlineStoreProductData.ProductEnum Skin8_Bolt = 62;
 ```
 ## `SongMeta.FreeDataSingleAlbumEnum`
 ```CSharp
